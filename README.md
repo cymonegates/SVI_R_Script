@@ -10,3 +10,5 @@ All methods and background information for SVI can be found at: https://www.atsd
 As the R script is merely a reproduction of the CDC's calculations, any questions about the CDC's SVI methodology should be directed to svi_coordinator@cdc.gov
 
 If you find any discrepancies between the CDC's 2018 SVI values and the 2018 values generated from this R Script, please email Cymone.Gates@azdhs.gov.
+
+Please note that the SVI data set generated from this R script does not include 2 variables that are present in the CDC's data set. Those are AREA_SQMI (Tract area in square miles) and E_DAYPOP (Adjunct variable - Estimated daytime population, LandScan 2018). As far as we could tell, these variables do not affect the SVI calculations but may be useful for mapping the data.
