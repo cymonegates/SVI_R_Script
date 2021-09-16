@@ -1,7 +1,7 @@
 # Social Vulnerability Index (SVI) R Script
 
 # Background
-ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated SVI data every two years. 
+ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the U.S. Census Bureau's American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated SVI data every two years. 
 
 In an effort to obtain updated SVI data each year, the Arizona Department of Health Services (ADHS) wrote an R script that reproduces the CDC's SVI calculations and can pull on newly released ACS 5-year data each year.
 
