@@ -1,7 +1,7 @@
 # Social Vulnerability Index (SVI) R Script
 
 # Overview
-ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the U.S. Census Bureau's American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated, publically available, national SVI data every two years. 
+ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the U.S. Census Bureau's American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated, national SVI data every two years. 
 
 In an effort to obtain updated SVI data each year, the Arizona Department of Health Services (ADHS) wrote this R script, which reproduces the CDC's SVI calculations and can pull in any year of ACS 5-year data, including newly released data. The script uses the TidyCensus R package to pull in Census data.
 
@@ -9,7 +9,7 @@ All methods and background information for SVI can be found at: https://www.atsd
 
 # Instructions
 1. Download the CDC_SVI_2018_DD.xlsx
-2. Download the R Script 
+2. Download the Arizona_SVI_Calculations_GitHub.R Script 
 3. Insert your census API key into line 27  (if you do not have one there is guidance in the R script) 
 4. Set your parameters in Section 2 
 5. Comment lines 27 and 30 
@@ -21,7 +21,7 @@ The SVI data set generated from this R script does not include 2 variables that 
 
 This code was based on the CDC's 2018 SVI documentation, which is slightly different from prior years (2016 and earlier) and may be different from future years if the CDC makes any changes. 
 
-You'll likely get errors if you try to pull in ACS data prior to 2013.
+You'll likely get errors if you try to pull in ACS data prior to 2013 using this R script.
 
 # Issues or Questions
 As the R script is merely a reproduction of the CDC's calculations, any questions about the CDC's SVI methodology should be directed to svi_coordinator@cdc.gov
