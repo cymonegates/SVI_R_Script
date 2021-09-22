@@ -11,7 +11,7 @@ All methods and background information for SVI can be found at: https://www.atsd
 1. Download the CDC_SVI_2018_DD.xlsx
 2. Download the R Script
 3. Insert your census API key into line 27 (if you do not have one there is guidance in the R script)
-4. Set your desired parameters in Section 2
+4. Set your parameters in Section 2
 5. Comment lines 27 and 30
 6. Run the entire code
 
