@@ -7,6 +7,14 @@ In an effort to obtain updated SVI data each year, the Arizona Department of Hea
 
 All methods and background information for SVI can be found at: https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/SVI_documentation_2018.html
 
+# Instructions
+1. Download the CDC_SVI_2018_DD.xlsx
+2. Download the R Script
+3. Insert your census API key into line 27 (if you do not have one there is guidance in the R script)
+4. Set your desired parameters in Section 2
+5. Comment lines 27 and 30
+6. Run the entire code
+
 # Notes and Considerations
 The SVI data set generated from this R script does not include 2 variables that are present in the CDC's data set. Those are AREA_SQMI (Tract area in square miles) and E_DAYPOP (Adjunct variable - Estimated daytime population, LandScan 2018). As far as we could tell, these variables do not affect the SVI calculations but may be useful for mapping the data.
 
