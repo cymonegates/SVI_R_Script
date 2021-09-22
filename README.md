@@ -1,9 +1,9 @@
 # Social Vulnerability Index (SVI) R Script
 
 # Overview
-ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the U.S. Census Bureau's American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated, publically available SVI data every two years. 
+ATSDR’s Geospatial Research, Analysis &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention Social Vulnerability Index (CDC SVI or simply SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event. The SVI uses the U.S. Census Bureau's American Community Survey (ACS), 5-year data (https://www.census.gov/data/developers/data-sets/acs-5year.html) and was calculated using SQL programming language. The CDC releases updated, publically available, national SVI data every two years. 
 
-In an effort to obtain updated SVI data each year, the Arizona Department of Health Services (ADHS) wrote an R script that reproduces the CDC's SVI calculations and can pull on newly released ACS 5-year data each year.
+In an effort to obtain updated SVI data each year, the Arizona Department of Health Services (ADHS) wrote this R script, which reproduces the CDC's SVI calculations and can pull in any year of ACS 5-year data, including newly released data. The script uses the TidyCensus R package to pull in Census data.
 
 All methods and background information for SVI can be found at: https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/SVI_documentation_2018.html
 
@@ -20,6 +20,8 @@ All methods and background information for SVI can be found at: https://www.atsd
 The SVI data set generated from this R script does not include 2 variables that are present in the CDC's data set. Those are AREA_SQMI (Tract area in square miles) and E_DAYPOP (Adjunct variable - Estimated daytime population, LandScan 2018). As far as we could tell, these variables do not affect the SVI calculations but may be useful for mapping the data.
 
 This code was based on the CDC's 2018 SVI documentation, which is slightly different from prior years (2016 and earlier) and may be different from future years if the CDC makes any changes. 
+
+You'll likely get errors if you try to pull in ACS data prior to 2013.
 
 # Issues or Questions
 As the R script is merely a reproduction of the CDC's calculations, any questions about the CDC's SVI methodology should be directed to svi_coordinator@cdc.gov
